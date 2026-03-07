@@ -1,0 +1,131 @@
+{
+  "bot": {
+    "name": "🐐 GOAT Bot v4 - Ultimate Edition",
+    "prefix": "!",
+    "token": "${DISCORD_TOKEN}",
+    "clientId": "${DISCORD_CLIENT_ID}",
+    "language": "en",
+    "supportedLanguages": ["en", "fr", "es", "de", "it", "pt", "vi"]
+  },
+
+  "database": {
+    "type": "postgresql",
+    "url": "${DATABASE_URL}",
+    "autoSync": true,
+    "autoRefreshThreadInfo": true,
+    "logging": false,
+    "ssl": true
+  },
+
+  "cache": {
+    "enabled": true,
+    "provider": "redis",
+    "url": "${REDIS_URL}",
+    "ttl": 3600,
+    "maxSize": "100mb"
+  },
+
+  "facebook": {
+    "email": "${FB_EMAIL}",
+    "password": "${FB_PASSWORD}",
+    "2faSecret": "${FB_2FA_SECRET}",
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; M2102J20SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36",
+    "intervalGetNewCookie": 1440,
+    "proxy": null,
+    "notes": "Auto retrieve new cookies every 1440 minutes (1 day). Set to null to disable."
+  },
+
+  "credentials": {
+    "gmail": {
+      "email": "${GMAIL_EMAIL}",
+      "clientId": "${GMAIL_CLIENT_ID}",
+      "clientSecret": "${GMAIL_CLIENT_SECRET}",
+      "refreshToken": "${GMAIL_REFRESH_TOKEN}"
+    },
+    "googleDrive": {
+      "enabled": true,
+      "folderId": "${GOOGLE_DRIVE_FOLDER_ID}",
+      "apiKey": "${GOOGLE_DRIVE_API_KEY}"
+    },
+    "youtube": {
+      "apiKey": "${YOUTUBE_API_KEY}",
+      "enabled": true
+    },
+    "spotify": {
+      "clientId": "${SPOTIFY_CLIENT_ID}",
+      "clientSecret": "${SPOTIFY_CLIENT_SECRET}",
+      "enabled": true
+    },
+    "openai": {
+      "apiKey": "${OPENAI_API_KEY}",
+      "model": "gpt-4",
+      "enabled": true
+    },
+    "rapidapi": {
+      "apiKey": "${RAPIDAPI_KEY}",
+      "enabled": true
+    }
+  },
+
+  "admin": {
+    "enabled": true,
+    "ownerIds": [
+      "USER_ID_1",
+      "USER_ID_2",
+      "USER_ID_3"
+    ],
+    "ignoreCommands": []
+  },
+
+  "whitelist": {
+    "mode": {
+      "enabled": false,
+      "userIds": [],
+      "notes": "Only users in this list can use the bot"
+    },
+    "threadMode": {
+      "enabled": false,
+      "threadIds": [],
+      "notes": "Only these threads can use the bot"
+    }
+  },
+
+  "features": {
+    "antiInbox": false,
+    "automod": true,
+    "logging": true,
+    "welcomeMessages": true,
+    "leaveMessages": true,
+    "levelSystem": true,
+    "economySystem": true,
+    "achievementSystem": true,
+    "prefixCommands": true,
+    "slashCommands": true
+  },
+
+  "api": {
+    "port": 3000,
+    "url": "${API_URL}",
+    "rateLimitRequests": 100,
+    "rateLimitWindow": 900000
+  },
+
+  "dashboard": {
+    "enabled": true,
+    "port": 3000,
+    "url": "${DASHBOARD_URL}",
+    "secret": "${SESSION_SECRET}"
+  },
+
+  "logging": {
+    "level": "info",
+    "format": "json",
+    "maxSize": "100m",
+    "maxFiles": 10,
+    "directory": "./logs"
+  },
+
+  "timezone": "Europe/Paris",
+  "maintenance": false,
+  "developmentMode": true
+    }
