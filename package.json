@@ -1,0 +1,45 @@
+{
+  "name": "goat-bot-v4",
+  "version": "4.0.0",
+  "description": "The Ultimate Modern Discord Bot with v2 APIs",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "lint": "eslint src --fix",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "@discordjs/builders": "^1.7.0",
+    "prisma": "^5.7.1",
+    "@prisma/client": "^5.7.1",
+    "redis": "^4.6.12",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0",
+    "express": "^4.18.2",
+    "axios": "^1.6.2",
+    "zod": "^3.22.4",
+    "node-cron": "^3.0.2",
+    "googleapis": "^118.0.0",
+    "spotify-web-api-node": "^5.0.2",
+    "openai": "^4.20.1",
+    "sharp": "^0.32.6",
+    "multer": "^1.4.5-lts.1",
+    "fb-chat-api": "^3.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "yt-dlp": "^1.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "vitest": "^1.1.0"
+  }
+}
