@@ -2,8 +2,8 @@
   "bot": {
     "name": "🐐 GOAT Bot v4 - Ultimate Edition",
     "prefix": "!",
-    "token": "${DISCORD_TOKEN}",
-    "clientId": "${DISCORD_CLIENT_ID}",
+    "token": "${}",
+    "clientId": "${}",
     "language": "en",
     "supportedLanguages": ["en", "fr", "es", "de", "it", "pt", "vi"]
   },
@@ -37,10 +37,10 @@
 
   "credentials": {
     "gmail": {
-      "email": "${GMAIL_EMAIL}",
-      "clientId": "${GMAIL_CLIENT_ID}",
-      "clientSecret": "${GMAIL_CLIENT_SECRET}",
-      "refreshToken": "${GMAIL_REFRESH_TOKEN}"
+      "email": "${sahulrimin@gmail.com",}",
+      "clientId": "${24605262819-7no89dr93lchm0nsnffte6k1girvf254.apps.googleusercontent.com",}",
+      "clientSecret": "${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",}",
+      "refreshToken": "${1//04jo0gL7IHPjJCgYIARAAGAQSNwF-L9IrkbtrhwYvh7OIPCnnbjaX0MGtDJre7DP8-A35eNn1LthF4-VEVT47RPXY9llD0GpQpvU}"
     },
     "googleDrive": {
       "enabled": true,
